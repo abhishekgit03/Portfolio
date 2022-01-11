@@ -203,29 +203,48 @@
 }
 
 .fa {
-    padding: 20px;
-    font-size: 10px;
+    padding: 15px;
+    font-size: 50px;
     width: 50px;
+    height: 50px;
     text-align: center;
     text-decoration: none;
+    margin: 10px 10px;
+    border-radius: 50%;
+    transition: transform 250ms;
   }
 
-.fa-facebook {
-    background: #3B5998;
-    size: 50%;
+.fa-instagram {
+    size: 200px;
+    background: #f70692;
     color: white;
   }
 
-  .fa-facebook:hover {
-    background: #004bec;
+  .fa-instagram:hover {
+    background: #9408f14d;
     color: white;
+    transform: translateY(-10px);
   }
 
-.fa-twitter {
+.fa-linkedin {
     background: #55ACEE;
     color: white;
   }
+  .fa-linkedin:hover {
+    background: #004bec;
+    color: white;
+    transform: translateY(-10px);
+  }
+  .fa-github {
+    background: #000000;
+    color: white;
+  }
 
+  .fa-github:hover {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transform: translateY(-10px);
+  }
 
 @media screen and (max-width: 768px){
 
