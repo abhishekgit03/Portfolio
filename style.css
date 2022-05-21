@@ -202,7 +202,10 @@
 .about p{
     font-size: larger;
 }
-
+.about h1{
+    color:#d9138a;
+    font-size: 50px;
+}
 .container{
     display: flex;
 
@@ -259,6 +262,97 @@
     transform: translateY(-10px);
   }
 
+.skills
+{
+    max-width: 800px;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    background: rgba(77, 77, 179, 0.274);
+    padding: 50px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    color: white;
+    backdrop-filter: blur(3px);
+    --webkit-backdrop-filter: blur(5px);
+    list-style: none;
+}
+.skills li{
+    margin: 2px;
+    padding:20px;
+    list-style-type: none;
+}
+.bar{
+    background: rgb(255, 255, 255);
+    display: block;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.bar span{
+    height:20px;
+    background: linear-gradient(135deg, rgba(236,0,140,1)0%, rgba(252,103,103,1)100%);
+    float: left;
+}
+.html
+{
+    width: 70%;
+    animation: html 3s;
+}
+.css
+{
+    width: 50%;
+    animation: css 3s;
+}
+.js
+{
+    width: 50%;
+    animation: js 3s;
+}
+.py
+{
+    width: 90%;
+    animation: py 3s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:70%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:50%;
+    }
+}
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:50%;
+    }
+}
+@keyframes py{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:90%;
+    }
+}
 @media screen and (max-width: 768px){
 
     .hero{
